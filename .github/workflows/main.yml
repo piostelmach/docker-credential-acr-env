@@ -44,3 +44,8 @@ jobs:
       run: |
         pwd
         ls
+        
+    - uses: actions/upload-artifact@v3
+      with:
+        name: binaries
+        path: /home/runner/work/docker-credential-acr-env/docker-credential-acr-env/dist
