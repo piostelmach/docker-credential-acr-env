@@ -28,7 +28,7 @@ jobs:
     - name: Run GoReleaser
       uses: goreleaser/goreleaser-action@v3
       with:
-        distribution: goreleaser
+        workdir: docker-credential-acr-env
         version: latest
         args: release --rm-dist
       env:
